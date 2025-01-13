@@ -1,0 +1,48 @@
+﻿﻿@{
+    ViewData["Title"] = "Vendas";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <form class="form-horizontal" asp-action="PesquisaSimples">
+            <fieldset>
+                <legend>Pesquisa Simples</legend>
+                <div class="mb-3">
+                    <label for="dataMin" class="form-label">Data Mínima</label>
+                    <input type="date" name="dataMin" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="dataMax" class="form-label">Data Máxima</label>
+                    <input type="date" name="dataMax" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <form class="form-horizontal" asp-action="PesquisaAgrupada">
+            <fieldset>
+                <legend>Pesquisa Agrupada</legend>
+                <div class="mb-3">
+                    <label for="dataMin" class="form-label">Data Mínima</label>
+                    <input type="date" name="dataMin" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="dataMax" class="form-label">Data Máxima</label>
+                    <input type="date" name="dataMax" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
